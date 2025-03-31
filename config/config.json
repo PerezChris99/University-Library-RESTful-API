@@ -1,0 +1,22 @@
+{
+  "development": {
+    "PORT": 3000,
+    "MONGODB_URL": "mongodb://localhost:27017/library-dev",
+    "JWT_SECRET": "developmentsecretkey",
+    "JWT_EXPIRY": "7d",
+    "EMAIL_SERVICE": "gmail",
+    "EMAIL_USER": "university.library@example.com",
+    "EMAIL_PASSWORD": "yourapppassword",
+    "FINE_RATE_PER_DAY": 1
+  },
+  "test": {
+    "PORT": 3000,
+    "MONGODB_URL": "mongodb://localhost:27017/library-test",
+    "JWT_SECRET": "testsecretkey",
+    "JWT_EXPIRY": "7d",
+    "FINE_RATE_PER_DAY": 1
+  },
+  "production": {
+    "JWT_EXPIRY": "30d"
+  }
+}
